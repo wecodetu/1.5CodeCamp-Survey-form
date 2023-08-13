@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <h1 id="title">
+      freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+
+<div class="container">
+
+ <fieldset>
+        <label id='name-label'>Name
+          <input id="name" name="name" type="text" required placeholder='Enter your name'></input>
+        </label>
+
+        <label id="email-label" >Email
+          <input id="email" name="email" type="email" required placeholder='Enter your Email'></input>
+        </label>
+
+        <label id="number-label">Age (Optional)
+          <input id="number" type="number" name="age" min="13" max="120" placeholder='Age'></input>
+        </label>
+
+        <label for="role">
+          Which option best describes your current role?
+          <select id="dropdown" name="role" >
+            <option value="" disabled selected hidden>Select one role</option>
+            <option value="1">Student</option>
+            <option value="2">Full Time Job</option>
+            <option value="3">Full Time Learner </option>
+            <option value="4">Prefer not say</option>
+            <option value="5">Other</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <p class="p2">Would you recommend freeCodeCamp to a friend?</p>
+        <label for="yes-recommend"><input value="yes-recommend" type="radio" name="recommend" class="inline radio" /> Definitely </label>
+        <label for="maybe-recommend"><input value="maybe-recommend" type="radio" name="recommend" class="inline radio" /> Maybe </label>
+        <label for="Notsure-recommend"><input value="Notsure-recommend" type="radio" name="recommend" class="inline radio" /> Not sure </label>
+      </fieldset>
+
+      <fieldset>
+          <label for="role">
+          What is your favorite feature of freeCodeCamp?
+          <select id="feature" name="feature" >
+            <option value="" disabled selected hidden>Select an option</option>
+            <option value="Challenges">Challenges </option>
+            <option value="Projects">Projects</option>
+            <option value="Community">Community</option>
+            <option value="Open Source">Open Source</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <p class="p2">What would you like to see improved? (Check all that apply)</p>
+        <label for="project1">
+          <input id="project1" type="checkbox" name="project1" value="Front-end Projects" class="inline checkbox" />Front-end Projects
+        </label>
+
+        <label for="project2"> 
+          <input id="project2" type="checkbox" name="project2" value="Back-end Projects" class="inline checkbox" />Back-end Projects
+        </label>
+
+        <label for="project3"> 
+          <input id="project3" type="checkbox" name="project3" value="Data Visualization" class="inline checkbox" />Data Visualization
+        </label>
+
+        <label for="project4"> 
+          <input id="project4" type="checkbox" name="project4" value="Challenges" class="inline checkbox" />Challenges
+        </label>
+
+        <label for="project5"> 
+          <input id="project5" type="checkbox" name="project5" value="Open Source Community" class="inline checkbox" />Open Source Community
+        </label>
+
+        <label for="project6"> 
+          <input id="project6" type="checkbox" name="project6" value="Gitter help rooms" class="inline checkbox" />Gitter help rooms
+        </label>
+
+        <label for="project7"> 
+          <input id="project7" type="checkbox" name="project7" value="Videos" class="inline checkbox" />Videos
+        </label>
+
+        <label for="project8"> 
+          <input id="project8" type="checkbox" name="project8" value="City Meetups" class="inline checkbox" />City Meetups
+        </label>
+
+        <label for="project9"> 
+          <input id="project9" type="checkbox" name="project9" value="Wiki" class="inline checkbox" />Wiki
+        </label>
+
+        <label for="project10"> 
+          <input id="project10" type="checkbox" name="project10" value="Forum" class="inline checkbox" />Forum
+        </label>
+
+        <label for="project11"> 
+          <input id="project11" type="checkbox" name="project11" value="Additional Courses" class="inline checkbox" />Additional Courses
+        </label>
+        </fieldset>
+
+
+        <fieldset>  
+            <label for="comments">Any comments or suggestions?
+              <textarea id="comments" name="comments" rows="5" cols="50" placeholder="Enter your comment here..."></textarea>
+            </label>
+         </fieldset>   
+         <input id="submit" type='submit' value='submit'>
+        
+
+
+</div>
+     
+
+    </form>
+
+  </body>
+
+</html>
